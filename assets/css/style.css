@@ -67,6 +67,7 @@ li:hover {
   border-right-color: blue;
   margin-bottom: 10px;
   padding:100px;
+  font-size: 20px;
 }
 .container {
   display:flex;
@@ -74,18 +75,52 @@ li:hover {
   margin: 0;
 }
 
-.main section {
+.mysites{
+  display:flex;
+  padding-left: 50px;
+}
+
+.mysites ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+}
+
+.workhero {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.workhero section {
   margin-left: 20px;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-.mysites ul li{
-  display: inline-flex;
-  list-style-type: none;
-  padding-bottom: value;
-  border-bottom-style: solid;
-  color: black;
-  border-color: aqua;
-  justify-content: space-evenly;
+.card {
+  width: 50%;
+  padding: 10px;
+  filter: brightness(40%)
 }
+
+.card:hover {
+  filter:brightness(100%)
+}
+
+.card img {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardf {
+  width:100%;
+  
+}
+
+.cardcontainer {
+  display:flex;
+  flex-wrap: wrap;
+}
+
