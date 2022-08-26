@@ -6,7 +6,8 @@
 
 a {
   color:inherit;
-  text-decoration: none;
+
+  text-decoration: 2px underline rgb(33, 97, 192);
 }
 
 body {
@@ -119,7 +120,6 @@ li:hover {
 .workhero  {
   display:flex;
   flex-wrap: wrap;
-
   justify-content: center;
   align-items: center;
   width: calc(80% - 20px);
@@ -171,25 +171,35 @@ li:hover {
   color: black;
   font-size: 30px;
   text-decoration: 2px underline rgb(33, 97, 192);
-
 }
 
  @media screen and (max-width: 1390px) {
   .aside {
-    width: 10%;
+    display:flex;
+    width: 100%;
     justify-content: center;
     font-size: 15px;
   }
   .workhero {
-    width: 90%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+  }
+  .workhero p {
+    display:flex;
+    width:100%;
+    justify-content: center;
+    padding: 0 40px;
   }
   .card {
     flex:wrap;
     width: 100%;
     object-fit: cover;
   }
-}
-  /* .workhero {
-
+  .content {
+    flex:wrap;
+    flex-direction: column;
   }
+}
+
 
